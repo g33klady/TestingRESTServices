@@ -23,5 +23,13 @@ namespace TestingRESTServices
 				}
 			}
 		}
+
+		public static string ReadWebResponse(HttpResponseMessage httpResponseMessage)
+		{
+			using (httpResponseMessage)
+			{
+				return httpResponseMessage.Content.ReadAsStringAsync().Result;
+			}
+		}
 	}
 }
