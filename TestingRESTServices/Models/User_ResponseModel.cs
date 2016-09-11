@@ -9,6 +9,7 @@
 		public string avatarUrl { get; set; }
 		public string avatarUrlSmall { get; set; }
 		public string avatarUrlMedium { get; set; }
+		public string[] providers { get; set; }
 		public int v { get; set; }
 		public string gv { get; set; }
 	}
