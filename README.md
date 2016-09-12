@@ -2,6 +2,7 @@
 
 [![Join the chat at https://gitter.im/TestingRESTServices/Lobby](https://badges.gitter.im/TestingRESTServices/Lobby.svg)](https://gitter.im/TestingRESTServices/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 repo for the TestingRESTServices talk and tests</br>
+Slides: https://drive.google.com/open?id=0B0zvNKn7-MFPblVwWFgzMWlLN1E </br>
 <strong>Resources used</strong></br>
 Gitter API documentation -https://developer.gitter.im/docs/rest-api </br>
 Bacon Ipsum  - http://baconipsum.com/ </br>
