@@ -4,7 +4,7 @@
 
 <h2>Note: you will need to get your own Access Token from gitter to be able to run the tests!</h2>
 repo for the TestingRESTServices talk and tests</br>
-Slides: https://goo.gl/5CalvL </br>
+Slides: https://goo.gl/7K7PGW </br>
 <strong>Resources</strong></br>
 API Testing Framework - https://github.com/mwinteringham/api-framework </br>
 Gitter API documentation - https://developer.gitter.im/docs/rest-api </br>
