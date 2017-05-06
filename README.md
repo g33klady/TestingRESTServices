@@ -14,4 +14,5 @@ Heuristics Cheat Sheet - http://testobsessed.com/wp-content/uploads/2011/04/test
 Public APIs - https://github.com/toddmotto/public-apis/blob/master/README.md </br>
 SmartBear API Testing Dojo - https://www.soapui.org/testing-dojo/welcome-to-the-dojo.html </br>
 Blog post about database checks w/ REST: https://g33klady.com/2016/10/23/using-sql-databases-and-rest-together-in-integration-automation-with-c-and-nunit/ </br>
-AdventureWorks2012 database - http://msftdbprodsamples.codeplex.com/releases/view/55330 then get AdventureWorks2012-Full Database Backup.zip
+AdventureWorks2012 database - http://msftdbprodsamples.codeplex.com/releases/view/55330 then get AdventureWorks2012-Full Database Backup.zip </br>
+Choosing an HTTP Status Code - http://racksburg.com/choosing-an-http-status-code/
