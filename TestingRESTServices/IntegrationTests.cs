@@ -5,7 +5,7 @@ using System.Net.Http;
 using TestingRESTServices.Models;
 using NUnit.Framework;
 using Newtonsoft.Json;
-
+using System.Reflection;
 
 namespace TestingRESTServices
 {
@@ -67,7 +67,8 @@ namespace TestingRESTServices
 		public string PostMessagesToRoomUsingBoundaries(string file)
 		{
 			string uri = _baseUri + "/rooms/" + _roomId + "/chatMessages?access_token=" + _accessToken;
-			string path = @"C:\Source\Repos\TestingRestServicesGit\TestingRESTServices\bin\Debug\TestData\" + file;
+			string dir = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+			string path = dir + "\\TestData\\" + file;
 			string req;
 			using (StreamReader sr = new StreamReader(path))
 			{
