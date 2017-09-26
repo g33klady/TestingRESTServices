@@ -10,7 +10,7 @@ Slides: https://goo.gl/7K7PGW </br></br>
 <h3>API Testing</h3>
 SmartBear API Testing Dojo - https://www.soapui.org/testing-dojo/welcome-to-the-dojo.html </br>
 API Testing Framework from Mark Winteringham - https://github.com/mwinteringham/api-framework </br>
-Choosing an HTTP Status Code - http://racksburg.com/choosing-an-http-status-code/
+Choosing an HTTP Status Code - http://racksburg.com/choosing-an-http-status-code/ </br>
 Public APIs (to practice with) - https://github.com/toddmotto/public-apis/blob/master/README.md </br>
 Blog post: Paste JSON as classes - https://g33klady.com/2016/10/12/she-used-this-one-neat-trick-to-model-json-as-classes-in-c-and-her-audience-was-stunned/ </br>
 
