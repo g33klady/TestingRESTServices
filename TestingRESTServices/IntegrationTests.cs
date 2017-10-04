@@ -6,6 +6,7 @@ using TestingRESTServices.Models;
 using NUnit.Framework;
 using Newtonsoft.Json;
 using System.Reflection;
+using System;
 
 namespace TestingRESTServices
 {
@@ -44,7 +45,8 @@ namespace TestingRESTServices
 		public void PostMessageToRoomPostsTheMessageToTheRoom()
 		{
 			string uri = _baseUri + "/rooms/" + _roomId + "/chatMessages?access_token=" + _accessToken;
-			string reqBody = "{\"text\":\"this is a test\"}";
+			string postMessage = String.Format("this is a test at {0}", DateTime.Today.Ticks.ToString());
+			string reqBody = "{\"text\":\"" + postMessage + "\"}";
 
 			HttpResponseMessage responseToPost = Utilities.SendHttpWebRequest(uri, "POST", reqBody);
 			string respString = Utilities.ReadWebResponse(responseToPost);
@@ -60,7 +62,7 @@ namespace TestingRESTServices
 
 			string respToGetString = Utilities.ReadWebResponse(respToGet);
 			GetMessages_ResponseModel getMessage = JsonConvert.DeserializeObject<GetMessages_ResponseModel>(respToGetString);
-			Assert.AreEqual("this is a test", getMessage.text, "message text mismatch after GET");
+			Assert.AreEqual(postMessage, getMessage.text, "message text mismatch after GET");
 		}
 
 		[Test, TestCaseSource(typeof(MyTestDataClass), "TestCases")]
