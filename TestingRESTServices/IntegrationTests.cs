@@ -36,9 +36,29 @@ namespace TestingRESTServices
 
 			string respString = Utilities.ReadWebResponse(response);
 			User user = JsonConvert.DeserializeObject<User>(respString);
+
 			Assert.IsNotNull(user.avatarUrl, "AvatarUrl is null");
 			Assert.IsNotNull(user.avatarUrlMedium, "AvatarUrlMedium is null");
 			Assert.IsNotNull(user.avatarUrlSmall, "AvatarUrlSmall is null");
+		}
+
+		//Improving on the above test case, actually verifying the content of the avatarURL fields
+		//Because this is asserting based on the values for me, you'll need to change those variables to work for you
+		[Test]
+		public void GetUserInfoReturnsCorrectAvatarUrls()
+		{
+			string username = "g33klady"; //change this to your username
+			string userid = "403790"; //change this to your github userid
+			string uri = _baseUri + "/user/me?access_token=" + _accessToken;
+			HttpResponseMessage response = Utilities.SendHttpWebRequest(uri, "GET");
+			Assert.IsTrue(response.IsSuccessStatusCode, "Response code was not successful");
+
+			string respString = Utilities.ReadWebResponse(response);
+			User user = JsonConvert.DeserializeObject<User>(respString);
+
+			StringAssert.EndsWith(username, user.avatarUrl, "AvatarUrl does not end with " + username); 
+			StringAssert.EndsWith(userid + "?v=3&s=60", user.avatarUrlSmall, "AvatarUrlSmall does not end with the correct user ID or size"); 
+			StringAssert.EndsWith(userid + "?v=3&s=128", user.avatarUrlMedium, "AvatarUrlMedium does not end with the correct user ID or size"); 
 		}
 
 		[Test]
