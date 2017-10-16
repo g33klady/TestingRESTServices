@@ -13,6 +13,7 @@ API Testing Framework from Mark Winteringham - https://github.com/mwinteringham/
 Choosing an HTTP Status Code - http://racksburg.com/choosing-an-http-status-code/ </br>
 Public APIs (to practice with) - https://github.com/toddmotto/public-apis/blob/master/README.md </br>
 Blog post: Paste JSON as classes - https://g33klady.com/2016/10/12/she-used-this-one-neat-trick-to-model-json-as-classes-in-c-and-her-audience-was-stunned/ </br>
+Postman Documentation - https://www.getpostman.com/docs/ </br>
 
 <h3>Database Integration</h3>
 Blog post: database checks w/ REST API: https://g33klady.com/2016/10/23/using-sql-databases-and-rest-together-in-integration-automation-with-c-and-nunit/ </br>
