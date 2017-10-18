@@ -8,6 +8,7 @@ Slides: https://goo.gl/7K7PGW </br></br>
 <h2>Resources</h2>
 
 <h3>API Testing</h3>
+Katrina Clokie's API, Web Services & Microservices Testing Pathway (lots of resources) - http://katrinatester.blogspot.ca/2015/09/api-web-services-microservices-testing.html </br>
 SmartBear API Testing Dojo - https://www.soapui.org/testing-dojo/welcome-to-the-dojo.html </br>
 API Testing Framework from Mark Winteringham - https://github.com/mwinteringham/api-framework </br>
 Choosing an HTTP Status Code - http://racksburg.com/choosing-an-http-status-code/ </br>
